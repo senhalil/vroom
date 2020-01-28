@@ -344,7 +344,7 @@ Solution Input::solve(unsigned exploration_level, unsigned nb_thread) {
                     "Route geometry request with missing coordinates.");
   }
 
-  if (_matrix.size() < 2) {
+  if (_matrix.size() < 1) {
     // Call to routing engine if matrix not already provided.
     assert(_routing_wrapper);
     _matrix = _routing_wrapper->get_matrix(_locations);
